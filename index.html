@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="DESCRIPTION META TAG">
+    <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+    <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+    <meta property="og:url" content="URL OF THE WEBSITE"/>
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/your_banner_image.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+
+
+    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>V2XScenes: A Multiple Challenging Condition Dataset for Large-Range
+    Vehicle-Infrastructure Collaborative Perception</title>
+    <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+<style>
+    .image-container {
+        display: flex;
+        justify-content: center; /* 水平居中 */
+        align-items: center;     /* 垂直居中 */
+        flex-direction: column;  /* 让图片垂直排列，若需要水平排列可去除此行 */
+    }
+    
+    .image-container img {
+        width: 550px; /* 或者其他尺寸 */
+        height: auto;
+        margin: 10px 0; /* 图片间距 */
+    }
+</style>
+
+
+
+<section class="hero" >
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-2 publication-title"> V2XScenes: A Multiple Challenging Traffic Conditions Dataset for Large-Range Vehicle-Infrastructure Collaborative Perception
+                    </h1>  
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><a href="https://scholar.google.com/citations?user=PK-ODQoAAAAJ&hl=en" target="_blank">Bowen Wang</a><sup>1</sup>,</span>
+                            <span class="author-block"><a href="https://scholar.google.com/citations?hl=en&user=Q3ijLUoAAAAJ" target="_blank">Yafei Wang</a><sup>1</sup>,</span>
+                            <span class="author-block">Wei Gong</a><sup>1,2</sup>,</span>
+                            <span class="author-block"><a href="https://scholar.google.com/citations?hl=en&user=W_Q33RMAAAAJ" target="_blank">Siheng Chen</a><sup>1,3</sup>,</span>
+                        </div>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">Genjia Liu</a><sup>1</sup>,</span>
+                            <span class="author-block">Minhao Xiong</a><sup>1</sup>,</span>
+                            <span class="author-block">Chin Long Ng</a><sup>1</sup></span>
+                        </div>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>1</sup>Shanghai Jiao Tong University,</span>
+                            <span class="author-block"><sup>2</sup>Shanghai Lingang Group,</span>
+                            <span class="author-block"><sup>3</sup>Shanghai AI Lab</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <div class="item">
+                <!-- &nbsp; -->
+                <img src="static/images/fig.6.png" alt="infrastructure_sensors" />
+                <!-- <h2 class="subtitle has-text-centered">
+                    Demonstration of proposed V2XScenes.
+                </h2> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Overview</h2>
+                <div class="content">
+                    <strong>V2XScenes</strong> is the first high-quality real-world <strong>multiple challenging condition dataset</strong> 
+                    under large-range road section for large-range V2X cooperative perception.<br>
+                    <ul>
+                        <li>Data simultaneously collected by <strong>26 roadside sensors</strong> and <strong>9 onboard sensors</strong>.</li>
+                        <li>The sequential data with different scenes of <strong>complex traffic conditions, diverse weather</strong> are well-organized with specific scene-descriptive labels.</li>
+                        <li>5 type sensors of <strong>mechanical LiDAR, Solid-state LiDAR, blind repair LiDAR, 4D Radar and Camera</strong>.</li> 
+                        <li>Global sequential 3D bounding boxes and trajectories with <strong>unique tracking IDs</strong> for the same targets <strong>under the range of 600m</strong> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" >
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Whether autonomous driving can effectively handle challenging scenarios such as bad weather and complex traffic
+                        environments is still in doubt. One of the critical difficulty is that the single-agent perception is hard to obtain the
+                        complementary perceptual information around the multi-condition scenes, such as meeting occlusion. To investigate the
+                        advantages of collaborative perception in high-risky driving scenarios, we constructed a multiple challenging condition
+                        dataset for large-range vehicle-Infrastructure cooperative perception, called <b>V2XScenes</b>, which include seven typical
+                        multi-modal sensor layouts at successive road section. Particularly, each selected scene is labeled with specific
+                        condition description, and we provide the unique global object tracking numbers across the entire road section and
+                        sequential frames to ensure consistency. Comprehensive cooperative perception benchmarks of 3D object detection and
+                        tracking are provided, the quantitative results based on the state-of-the-art demonstrate the effectiveness of
+                        collaborative perception facing corner condition.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" >
+    <div class="container is-max-desktop">
+        <h3 class="title is-8 has-text-centered">Sensor Layouts of V2XScenes</h3>
+        <div class="hero-body">
+            <div class="item">
+                <!-- &nbsp; -->
+                <img src="static/images/sub.1.png" alt="infrastructure_sensors" />
+                <h2 class="subtitle has-text-centered">
+                    Detailed sensor layouts for both roadside and vehicle side view in V2XScenes.
+                </h2>
+                &nbsp;
+                <img src="static/images/sub.2.png" alt="infrastructure_sensors" />
+                <!-- <h2 class="subtitle has-text-centered">
+                    Specific index for roadside and vehicle-side sensors.
+                </h2> -->
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="static/images/sub.4.png" alt="infrastructure_sensors" />
+                </div>
+                <h2 class="subtitle has-text-centered">
+                    Mounting position of the corresponding roadside sensors with specific index.
+                </h2>
+            </div>
+        </div>
+</section>
+
+<section class="section" >
+    <div class="container is-max-desktop">
+        <h3 class="title is-8 has-text-centered">Calibration</h3>
+        <div class="hero-body">
+            <div class="item">
+                <img src="static/images/fig.1.png" alt="infrastructure_sensors" />
+                <h2 class="subtitle has-text-centered">
+                    The calibration relationships among the sensors in V2XScenes.
+                </h2>
+                &nbsp;
+            </div>
+            <div style="width: 100%; text-align: center;">
+                <iframe src="https://drive.google.com/file/d/1gy4wgL_jW_OkCVPtsd_uHPnYkSiqODUK/preview" alt="infrastructure_sensors"  width="900" height="303"></iframe>
+                <iframe src="https://drive.google.com/file/d/1ovY_tl4YO5niwsyqhiiWEXDuONsHW8ft/preview" alt="infrastructure_sensors"  width="900" height="303"></iframe>
+                <iframe src="https://drive.google.com/file/d/1YZ2BWl4yGjQV7SXeWiNG5SzNKyLQvTbs/preview" alt="infrastructure_sensors"  width="900" height="303"></iframe>              
+                <h2 class="subtitle has-text-centered">
+                    Illustrations of fused point cloud for both roadside and vehicle-side view.
+                    The <span style="color: gray; font-weight: bold;">gray</span> points and 
+                    <span style="color: rgb(2, 2, 69); font-weight: bold;">blue</span> points represent the roadside and vehicle-side LiDAR respectively. 
+                    The <span style="color: darkred; font-weight: bold;">red</span> points are denoted as the roadside 4D Radar.
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<section class="section" >
+    <div class="container is-max-desktop">
+        <h3 class="title is-8 has-text-centered">Examples of multi-condition scenes in V2XScenes</h3>
+        <div class="hero-body">
+            <div class="item">
+                <img src="static/images/V2XScenes_des2.png" alt="infrastructure_sensors" />
+                <h2 class="subtitle has-text-centered">
+                </h2>
+            </div>
+        </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content has-text-centered">
+                    <p>
+                        The <strong>V2XScenes</strong> Cooperative Perception Dataset is licensed under <a
+                            href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA
+                        4.0</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+<!-- End of Statcounter Code -->
+
+</body>
+
+</html>
